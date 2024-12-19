@@ -7,7 +7,7 @@ const Testimonials = () => {
     {
       name: "John Doe",
       image: "https://readymadeui.com/team-1.webp",
-      rating: 3,
+      rating: 4,
       text: "The service was amazing. I never had to wait that long for my food. The staff was friendly and attentive, and the delivery was impressively prompt.",
     },
     {
@@ -62,12 +62,12 @@ const Testimonials = () => {
   const currentTestimonials = testimonials.slice(startIndex, startIndex + cardsPerPage);
 
   return (
-    <div className="mt-20 font-[sans-serif]">
+    <div className="mt-20">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-gray-800 text-2xl md:text-3xl font-extrabold">What our clients say</h2>
+          <h2 className="text-gray-800 text-2xl md:text-3xl font-extrabold">What our customers say</h2>
           <p className="text-sm text-gray-800 mt-3 pb-5 leading-relaxed px-3">
-            We value our clients and always aim to provide the best service. Here's what they have to say about us!
+            We value our customers and always aim to provide the best service. Here's what they have to say about us!
           </p>
         </div>
 
@@ -110,7 +110,14 @@ const Testimonials = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+            className="w-6 h-6 text-white" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="2" 
+            strokeLinecap="round" 
+            strokeLinejoin="round">
               <path d="M9 18l6-6-6-6" />
             </svg>
           </motion.button>

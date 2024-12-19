@@ -1,7 +1,7 @@
 import React from 'react';
-import { products } from '../data/mockDatabase'; // Ensure path is correct
-import ProductCard from '../components/ProductCard'; // Ensure path is correct
-import { Link } from 'react-router-dom'; // Assuming you're using react-router for navigation
+import { products } from '../data/mockDatabase'; 
+import ProductCard from '../components/ProductCard';
+import { Link } from 'react-router-dom'; 
 
 const Featured = () => {
   // Limit the number of products
@@ -27,14 +27,15 @@ const Featured = () => {
           {featuredProducts.map((product, index) => (
             <div
               key={product.id}
-              className={`flex-shrink-0 snap-start w-56 sm:w-64 md:w-72 `}
+              className={`flex-shrink-0 snap-start w-56 sm:w-64 md:w-72`}
             >
               <ProductCard
                 imageUrl={product.imageUrl || 'https://via.placeholder.com/300x200?text=No+Image'}
                 heading={product.name || 'Unnamed Product'}
                 subheading={product.description || 'No description available'}
+                price={product.price || 'N/A'} 
                 altText={product.name || 'Product Image'}
-                heightClass="h-74" /* Custom height for cards */
+                heightClass="h-74" 
               />
             </div>
           ))}

@@ -42,40 +42,40 @@ export default function AppNavbar() {
       </motion.div>
 
       {/* Bottom floating navbar with gray background and white text */}
-      <div className="fixed bottom-8 md:bottom-14 left-1/2 transform -translate-x-1/2 w-[90%] max-w-md flex justify-around items-center md:py-1 rounded-full bg-black bg-opacity-80 text-white shadow-xl z-50">
+      <div className="fixed bottom-8 md:bottom-14 left-1/2 transform -translate-x-1/2 w-[90%] max-w-md flex justify-around items-center py-0 px-2 md:py-1 rounded-full bg-black bg-opacity-80 text-white shadow-xl z-50">
         <a
           href="/"
-          className="flex flex-col items-center font-normal hover:text-red-500 p-2 rounded-lg transition-all duration-200 text-xs w-16 h-16 justify-center items-center hover:scale-90"
+          className="flex flex-col items-center font-normal hover:text-red-500 p-1 md:p-2 rounded-lg transition-all duration-200 text-xs w-16 h-16 justify-center items-center hover:scale-90"
         >
-          <FaHome className="mb-1 text-xl" />
+          <FaHome className="mb-1 text-lg sm:text-xl" />
           Home
         </a>
         <a
           href="/menu"
-          className="flex flex-col items-center font-normal hover:text-red-500 p-2 rounded-lg transition-all duration-200 text-xs w-16 h-16 justify-center items-center hover:scale-90"
+          className="flex flex-col items-center font-normal hover:text-red-500 p-1 md:p-2 rounded-lg transition-all duration-200 text-xs w-16 h-16 justify-center items-center hover:scale-90"
         >
-          <FaUtensils className="mb-1 text-xl" />
+          <FaUtensils className="mb-1 text-lg sm:text-xl" />
           Menu
         </a>
         <a
           href="/contact"
-          className="flex flex-col items-center font-normal hover:text-red-500 p-2 rounded-lg transition-all duration-200 text-xs w-16 h-16 justify-center items-center hover:scale-90"
+          className="flex flex-col items-center font-normal hover:text-red-500 p-1 md:p-2 rounded-lg transition-all duration-200 text-xs w-16 h-16 justify-center items-center hover:scale-90"
         >
-          <FaPhoneAlt className="mb-1 text-xl" />
+          <FaPhoneAlt className="mb-1 text-lg sm:text-xl" />
           Contact
         </a>
         <a
           href="/cart"
-          className="flex flex-col items-center font-normal hover:text-red-500 p-2 rounded-lg transition-all duration-200 text-xs w-16 h-16 justify-center items-center hover:scale-90"
+          className="flex flex-col items-center font-normal hover:text-red-500 p-1 md:p-2 rounded-lg transition-all duration-200 text-xs w-16 h-16 justify-center items-center hover:scale-90"
         >
-          <FaShoppingCart className="mb-1 text-xl" />
+          <FaShoppingCart className="mb-1 text-lg sm:text-xl" />
           Cart
         </a>
         <a
           href="/profile"
-          className="flex flex-col items-center font-normal hover:text-red-500 p-2 rounded-lg transition-all duration-200 text-xs w-16 h-16 justify-center items-center hover:scale-90"
+          className="flex flex-col items-center font-normal hover:text-red-500 p-1 md:p-2 rounded-lg transition-all duration-200 text-xs w-16 h-16 justify-center items-center hover:scale-90"
         >
-          <FaUser className="mb-1 text-xl" />
+          <FaUser className="mb-1 text-lg sm:text-xl" />
           Profile
         </a>
       </div>

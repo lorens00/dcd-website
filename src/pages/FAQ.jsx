@@ -25,8 +25,8 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="font-[sans-serif] space-y-4 max-w-4xl mx-auto">
-      <h2 className="text-3xl text-center font-extrabold text-gray-800 mb-8">Frequently Asked Questions</h2>
+    <div className=" space-y-4 lg:max-w-6xl mx-auto px-1">
+      <h2 className="text-xl md:text-3xl text-center font-extrabold text-gray-800 mb-8">Frequently Asked Questions</h2>
       {faqs.map((faq, index) => (
         <Accordion key={index} question={faq.question} answer={faq.answer} />
       ))}

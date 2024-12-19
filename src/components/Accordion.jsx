@@ -7,7 +7,7 @@ const Accordion = ({ question, answer }) => {
     <div className="accordion rounded-lg hover:bg-red-50 transition-all">
       <button
         type="button"
-        className="toggle-button w-full text-base text-left py-5 px-6 text-gray-800 flex items-center"
+        className="toggle-button w-full lg:text-lg text-left py-5 px-6 text-gray-800 flex items-center"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="mr-4">{question}</span>
@@ -28,7 +28,7 @@ const Accordion = ({ question, answer }) => {
       <div
         className={`content px-6 ${isOpen ? "max-h-screen" : "max-h-0"} overflow-hidden transition-all duration-300`}
       >
-        <p className="text-sm text-gray-600">{answer}</p>
+        <p className="text-sm lg:text-lg text-gray-600 lg:pb-5">{answer}</p>
       </div>
     </div>
   );
