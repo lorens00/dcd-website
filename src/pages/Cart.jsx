@@ -19,7 +19,7 @@ const Cart = ({ cartItems = [] }) => { // Default cartItems to an empty array if
     <div className="border p-6 rounded-lg shadow-lg bg-white max-w-lg mx-auto">
       {/* Cart Header */}
       <div className="flex justify-between items-center border-b pb-2 mb-4">
-        <h4 className="font-bold text-xl text-red-700">My Cart</h4>
+        <h4 className="font-bold text-xl">My Cart</h4>
         <span className="text-sm text-gray-500">{cartItems.length} items</span>
       </div>
 

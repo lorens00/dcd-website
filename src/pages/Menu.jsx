@@ -25,16 +25,16 @@ const Menu = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-wrap pt-14">
+      <div className="flex flex-wrap pt-8 lg:pt-14">
         {/* Product Section */}
         <div className="w-full lg:w-2/3 lg:pl-28 py-5 md:py-8 pb-5">
           {/* Menu Heading */}
-          <h2 className="text-2xl font-bold text-red-700 pb-6 text-center lg:text-start">
+          <h2 className="text-2xl font-bold pb-6 text-center lg:text-start">
             Made for You
           </h2>
 
           {/* Product Cards Container */}
-          <div className="flex flex-wrap gap-4 md:gap-4 justify-center lg:justify-start">
+          <div className="flex flex-wrap gap-4 md:gap-6 justify-center lg:justify-start pb-16 lg:pb-24">
             {products.map((product, index) => (
               <div
                 key={index}

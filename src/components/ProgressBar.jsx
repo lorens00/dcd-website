@@ -8,7 +8,7 @@ const ProgressBar = () => {
         {[
           { step: 1, label: 'Order', active: true },
           { step: 2, label: 'Checkout', active: false },
-          { step: 3, label: 'Confirmation', active: false},
+          { step: 3, label: 'Verify', active: false},
         ].map(({ step, label, active }) => (
           <div key={step} className="flex flex-col justify-center items-center">
             <div

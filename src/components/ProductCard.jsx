@@ -14,7 +14,7 @@ const ProductCard = ({ imageUrl, heading, subheading, altText, heightClass, pric
         
         {/* Price and Icon Section */}
         <div className="mt-2 flex justify-between items-center">
-          <span className="text-red-700 font-semibold text-xs md:text-base md:pl-3">₱{price}.00 only</span>
+          <span className="text-red-700 font-semibold text-xs md:text-base lg:pl-3">₱{price}.00 only</span>
           <button className="md:px-1 py-1 md:py-2 rounded hover:scale-105 md:mr-1">
             <img src="/assets/add-to-bag.svg" className="w-5 md:w-6" alt="Add to Bag" />
           </button>
