@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import AppNavbar from './components/AppNavbar';
+import AppNavbar from './components/AppNavbar/AppNavbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Featured from './pages/Featured';
@@ -21,7 +21,6 @@ function App() {
           <Route path="/cart" element={<Cart />} />
 
         </Routes>
-        <Footer />
       </div>
     </Router>
   );

@@ -10,7 +10,7 @@ const FAQ = () => {
     {
       question: "Do you offer any discounts or deals on pizza?",
       answer:
-        "Yes, we have regular promotions and discounts! Keep an eye on our website for special offers or sign up for our newsletter for exclusive deals.",
+        "Yes, we have regular promotions and discounts! Keep an eye on our website and follow our social media accounts for updates on special offers.",
     },
     {
       question: "Can I order pizza for pickup instead of delivery?",
@@ -22,6 +22,10 @@ const FAQ = () => {
       answer:
         "We accept various payment methods, including Bank Transfer, Gcash, and cash on delivery. ",
     },
+    {
+      question: "Are there franchise opportunities available?",
+      answer: "Yes, we offer franchise opportunities! Please contact our franchising team for more details and assistance."
+    }
   ];
 
   return (

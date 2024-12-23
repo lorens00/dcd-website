@@ -4,11 +4,12 @@ import About from "./About";
 import Featured from "./Featured";
 import Testimonials from "./Testimonials";
 import FAQ from "./FAQ";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between p-6 lg:p-10 mb-10">
+      <div className="bg-yellow-500 flex flex-col-reverse lg:flex-row items-center justify-between p-6 lg:p-10 mb-10">
         {/* Content Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left mx-3 px-3">
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-800 mb-4">
@@ -44,21 +45,15 @@ export default function Home() {
         <About />
       </div>
 
-      <motion.div
-        className="my-10 lg:my-20"
-        initial={{ opacity: 0, y: 100 }} 
-        whileInView={{ opacity: 1, y: 0 }} 
-        transition={{ duration: .7, ease: "easeOut" }}
-        viewport={{ once: true }} 
-      >
+      <div className="pt-3 pb-10 my-10 lg:my-2 px-2">
         <Featured />
-      </motion.div>
+      </div>
 
       <motion.div
       className="pt-3 pb-10 my-10 lg:my-2 px-2"
       initial={{ opacity: 0, y: 100 }} 
       whileInView={{ opacity: 1, y: 0 }} 
-      transition={{ duration: .7, ease: "easeOut" }}
+      transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: true }} 
       >
         <Testimonials />
@@ -68,11 +63,13 @@ export default function Home() {
       className="py-8 px-1 my-12 lg:my-20 pb-14"
       initial={{ opacity: 0, y: 100 }} 
       whileInView={{ opacity: 1, y: 0 }} 
-      transition={{ duration: .7, ease: "easeOut" }}
+      transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: true }} 
       >
         <FAQ />
       </motion.div>
+
+      <Footer />
 
       
     </>

@@ -4,6 +4,7 @@ import Cart from './Cart';
 import ProgressBar from '../components/ProgressBar';
 import { products } from '../data/mockDatabase';
 import StoreLocation from '../components/StoreLocation';
+import FooterCredits from '../components/FooterCredits';
 
 const Menu = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -61,7 +62,9 @@ const Menu = () => {
           </div>
         </div>
       </div>
+      <FooterCredits />
     </div>
+    
   );
 };
 
