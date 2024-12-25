@@ -31,31 +31,32 @@ const Menu = () => {
       <div className="flex flex-col items-center pt-8 lg:pt-14">
 
         {/* Menu Heading */}
-        <h2 className="text-4xl font-bold pb-8 text-center">
+        <h2 className="text-2xl md:text-4xl font-bold pb-6 md:pb-8 text-center text-red-700">
           Made for You
         </h2>
 
         {/* Category Tabs */}
-        <div className="flex gap-8 mb-6">
+        <div className="flex gap-5 md:gap-6 mb-6">
           <button
-            className={`text-lg font-semibold ${activeCategory === 'all' ? 'text-red-700' : 'text-gray-700'}`}
+            className={`text-base md:text-lg font-semibold px-4 py-2 rounded-full transition duration-300 ${activeCategory === 'all' ? 'bg-red-700 text-white' : 'text-gray-700 hover:bg-gray-200'}`}
             onClick={() => setActiveCategory('all')}
           >
             All
           </button>
           <button
-            className={`text-lg font-semibold ${activeCategory === 'pizza' ? 'text-red-700' : 'text-gray-700'}`}
+            className={`text-base md:text-lg font-semibold px-4 py-2 rounded-full transition duration-300 ${activeCategory === 'pizza' ? 'bg-red-700 text-white' : 'text-gray-700 hover:bg-gray-200'}`}
             onClick={() => setActiveCategory('pizza')}
           >
             Pizza
           </button>
           <button
-            className={`text-lg font-semibold ${activeCategory === 'merch' ? 'text-red-700' : 'text-gray-700'}`}
+            className={`text-base md:text-lg font-semibold px-4 py-2 rounded-full transition duration-300 ${activeCategory === 'merch' ? 'bg-red-700 text-white' : 'text-gray-700 hover:bg-gray-200'}`}
             onClick={() => setActiveCategory('merch')}
           >
             Merch
           </button>
         </div>
+
 
         {/* Product Cards Container */}
         <div
@@ -95,3 +96,5 @@ const Menu = () => {
 };
 
 export default Menu;
+
+
