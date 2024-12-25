@@ -1,25 +1,30 @@
-import React from 'react';
+import React from "react";
 
-const ProductCard = ({ imageUrl, heading, subheading, altText, heightClass, price }) => {
+const ProductCard = ({ imageUrl, heading, price, heightClass, onAddToCart }) => {
   return (
-    <div className={`border rounded-lg overflow-hidden bg-white shadow-md ${heightClass}`}>
-      <img
-        src={imageUrl}
-        alt={altText}
-        className="w-full h-36 md:h-48 object-cover" /* Adjusted image height */
-      />
-      <div className="p-4">
-        <h4 className="font-bold text-sm md:text-lg text-center md:pb-2 md:leading-3 truncate">{heading}</h4>
-        <p className="text-gray-600 text-xs md:text-sm text-center pb-1 md:pb-2 mt-1 leading-snug truncate">{subheading}</p> 
-        
-        {/* Price and Icon Section */}
-        <div className="mt-2 flex justify-between items-center">
-          <span className="text-red-700 font-semibold text-xs md:text-base lg:pl-3">₱{price}.00 only</span>
-          <button className="md:px-1 py-1 md:py-2 rounded hover:scale-105 md:mr-1">
-            <img src="/assets/add-to-bag.svg" className="w-5 md:w-6" alt="Add to Bag" />
-          </button>
+    <div className="bg-white rounded-lg group overflow-hidden cursor-pointer relative z-40 shadow-lg hover:shadow-2xl transition-all duration-300 w-48 lg:w-52 mx-auto">
+      {/* Image Section */}
+      <div className={`overflow-hidden mx-auto ${heightClass}`}>
+        <img
+          src={imageUrl}
+          alt={heading}
+          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
+
+      {/* Hover Text Section */}
+      <div className="absolute bottom-0 left-0 right-0 bg-black/60 w-full p-2 flex justify-center items-center group-hover:opacity-100 transition-opacity duration-300 opacity-100 lg:opacity-0">
+        <div className="text-center">
+          <h3 className="text-sm lg:text-base font-bold text-white">
+            {heading}
+          </h3>
+          <h4 className="text-sm lg:text-base text-yellow-400 font-bold mt-1">
+            {price} only
+          </h4>
         </div>
       </div>
+
+
     </div>
   );
 };

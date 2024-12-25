@@ -9,7 +9,7 @@ import Footer from "./Footer";
 export default function Home() {
   return (
     <>
-      <div className="bg-yellow-500 flex flex-col-reverse lg:flex-row items-center justify-between p-6 lg:p-10 mb-10">
+      <div className="bg-white flex flex-col-reverse lg:flex-row items-center justify-between p-6 lg:p-10 mb-10">
         {/* Content Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left mx-3 px-3">
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-800 mb-4">
@@ -45,7 +45,7 @@ export default function Home() {
         <About />
       </div>
 
-      <div className="pt-3 pb-10 my-10 lg:my-2 px-2">
+      <div className="pt-3 pb-8 my-8 lg:my-2 px-2">
         <Featured />
       </div>
 

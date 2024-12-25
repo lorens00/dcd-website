@@ -7,7 +7,7 @@ const Testimonials = () => {
     {
       name: "John Doe",
       image: "https://readymadeui.com/team-1.webp",
-      rating: 4,
+      rating: 5,
       text: "The service was amazing. I never had to wait that long for my food. The staff was friendly and attentive, and the delivery was impressively prompt.",
     },
     {

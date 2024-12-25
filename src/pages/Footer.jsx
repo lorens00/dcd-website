@@ -25,7 +25,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6 text-gray-200">Franchising</h4>
             <ul className="space-y-4">
               <li className="text-gray-400 text-base">Interested in franchising? Contact us at:</li>
-              <li className="text-gray-400 text-base">franchise@delishcheese.com</li>
+              <li className="text-gray-400 text-base">dcdfoodsfranchising@gmail.com</li>
               <li className="text-gray-400 text-base">+1 234 567 890</li>
             </ul>
           </div>

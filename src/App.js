@@ -6,7 +6,6 @@ import About from './pages/About';
 import Featured from './pages/Featured';
 import Footer from './pages/Footer'; 
 import Menu from './pages/Menu';
-import Cart from './pages/Cart';
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/featured" element={<Featured />} /> 
           <Route path="/menu" element={<Menu />} /> 
-          <Route path="/cart" element={<Cart />} />
 
         </Routes>
       </div>

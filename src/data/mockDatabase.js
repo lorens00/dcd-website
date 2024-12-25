@@ -1,59 +1,91 @@
-// Example structure for products in mockDatabase.js
-export const products = [
-  {
-    id: 1,
-    name: "Flavor 1",
-    description: "This is a description for flavor 1",
-    price: 209.00,
-    imageUrl: "/assets/PizzaFlavor/ClassicCheese.jpg",
-  },
-  {
-    id: 2,
-    name: "Flavor 2",
-    description: "This is a description for flavor 2",
-    price: 259.00,
-    imageUrl: "/assets/PizzaFlavor/Hawaiian.jpg"
-  },
-  {
-    id: 3,
-    name: "Flavor 3",
-    description: "This is a description for flavor 3",
-    price: 289.00,
-    imageUrl: "/assets/PizzaFlavor/Pepperoni.jpg",
-  },
-  {
-    id: 4,
-    name: "Flavor 4",
-    description: "This is a description for flavor 4",
-    price: 309.00,
-    imageUrl: "/assets/PizzaFlavor/PepperBeef.jpg",
-  },
-  {
-    id: 5,
-    name: "Flavor 5",
-    description: "This is a description for flavor 5",
-    price: 309.00,
-    imageUrl: "/assets/PizzaFlavor/BaconCheese.jpg",
-  },
-  {
-    id: 6,
-    name: "Flavor 6",
-    description: "This is a description for flavor 6",
-    price: 309.00,
-    imageUrl: "/assets/PizzaFlavor/Vegizza.jpg",
-  },
-  {
-    id: 7,
-    name: "Flavor 7",
-    description: "This is a description for flavor 7",
-    price: 379.00,
-    imageUrl: "/assets/PizzaFlavor/allMeat.jpg",
-  },
-  {
-    id: 8,
-    name: "Flavor 8",
-    description: "This is a description for flavor 8",
-    price: 479.00,
-    imageUrl: "/assets/PizzaFlavor/Kaniyaki.jpg",
-  },
-];
+export const products = {
+  pizza: [
+    {
+      id: 1,
+      name: "Classic Cheese",
+      description: "A timeless classic with a cheesy overload.",
+      price: 209.00,
+      imageUrl: "/assets/PizzaFlavor/ClassicCheese.jpg",
+    },
+    {
+      id: 2,
+      name: "Hawaiian",
+      description: "Sweet and savory with pineapples and ham.",
+      price: 259.00,
+      imageUrl: "/assets/PizzaFlavor/Hawaiian.jpg",
+    },
+    {
+      id: 3,
+      name: "Pepperoni",
+      description: "Loaded with pepperoni slices and melted cheese.",
+      price: 289.00,
+      imageUrl: "/assets/PizzaFlavor/Pepperoni.jpg",
+    },
+    {
+      id: 4,
+      name: "Pepper Beef",
+      description: "Tender beef slices with a peppery twist.",
+      price: 309.00,
+      imageUrl: "/assets/PizzaFlavor/PepperBeef.jpg",
+    },
+    {
+      id: 5,
+      name: "Bacon Cheese",
+      description: "Crispy bacon and gooey cheese on every slice.",
+      price: 309.00,
+      imageUrl: "/assets/PizzaFlavor/BaconCheese.jpg",
+    },
+    {
+      id: 6,
+      name: "Vegizza",
+      description: "A fresh medley of veggies on a classic crust.",
+      price: 309.00,
+      imageUrl: "/assets/PizzaFlavor/Vegizza.jpg",
+    },
+    {
+      id: 7,
+      name: "All Meat",
+      description: "A carnivore’s dream with every meat imaginable.",
+      price: 379.00,
+      imageUrl: "/assets/PizzaFlavor/AllMeat.jpg",
+    },
+    {
+      id: 8,
+      name: "Kaniyaki",
+      description: "Unique Japanese-inspired flavors with kani and mayo.",
+      price: 479.00,
+      imageUrl: "/assets/PizzaFlavor/Kaniyaki.jpg",
+    },
+  ],
+  merch: [
+    {
+      id: 1,
+      name: "Pizza T-shirt",
+      description: "A trendy t-shirt for pizza lovers.",
+      price: 399.00,
+      imageUrl: "/assets/ariel.jpg",
+    },
+    {
+      id: 2,
+      name: "Pizza Mug",
+      description: "Start your day with a mug inspired by pizza.",
+      price: 199.00,
+      imageUrl: "/assets/Merch/PizzaMug.jpg",
+    },
+    {
+      id: 3,
+      name: "Pizza Tote Bag",
+      description: "A reusable tote bag with a pizza design.",
+      price: 249.00,
+      imageUrl: "/assets/Merch/PizzaToteBag.jpg",
+    },
+    {
+      id: 4,
+      name: "Pizza Cap",
+      description: "A cool cap for fans of pizza and style.",
+      price: 299.00,
+      imageUrl: "/assets/Merch/PizzaCap.jpg",
+    },
+    
+  ],
+};
