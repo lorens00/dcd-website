@@ -38,7 +38,7 @@ export default function AppNavbar() {
       </motion.div>
 
       {/* Bottom floating navbar */}
-      <div className="fixed bottom-14 left-1/2 transform -translate-x-1/2 w-[90%] max-w-lg flex items-center justify-center gap-1 z-50">
+      <div className=" fixed bottom-10 md:bottom-14 left-1/2 transform -translate-x-1/2 w-[90%] max-w-lg flex items-center justify-center gap-1 z-50">
         {/* Hamburger Button */}
         <button
           className="p-4 md:p-5 bg-black bg-opacity-70 text-white rounded-2xl shadow-xl hover:bg-opacity-80 transition duration-300"
@@ -50,17 +50,17 @@ export default function AppNavbar() {
         {/* Explore Menu Button */}
         <a
           href="/menu"
-          className="px-16 md:px-32 py-4 md:py-4 bg-black bg-opacity-70 text-white text-sm md:text-xl font-semibold rounded-2xl shadow-xl hover:bg-red-700 transition duration-300"
+          className="px-10 md:px-28 py-4 md:py-4 bg-black bg-opacity-70 text-white sm:text-sm md:text-lg font-semibold rounded-2xl shadow-xl hover:bg-red-700 transition duration-300"
         >
-          Explore Menu
+          Explore Products
         </a>
 
-        {/* Profile Button */}
+        {/* Store Button */}
         <a
-          href="/profile"
-          className="p-4 md:p-5 bg-black bg-opacity-70 text-white rounded-2xl shadow-xl hover:bg-opacity-80 transition duration-300"
+          href="/store"
+          className="p-4 md:p-4 bg-black bg-opacity-70 text-white rounded-2xl shadow-xl hover:bg-opacity-80 transition duration-300"
         >
-          <FaUser className="text-xl" />
+          <img src="/assets/storeLogo2.svg" className='w-7' alt="" />
         </a>
       </div>
 
@@ -84,16 +84,16 @@ export default function AppNavbar() {
 
           {/* Store Locations Item */}
           <a
-            href="/store"
+            href="/FAQ"
             className="p-2 hover:bg-red-700 hover:scale-105 transform transition-all duration-300 rounded-xl border border-white flex items-center gap-2 justify-center w-full"
           >
-            <img src="/assets/storeLogo2.svg" className="w-6" alt="Store Locations" />
-            <span className="text-sm md:text-lg">Stores</span>
+            <img src="/assets/question.svg" className="w-6" alt="Store Locations" />
+            <span className="text-sm md:text-lg">FAQs</span>
           </a>
 
           {/* Contact Us Item */}
           <a
-            href="/cart"
+            href="/contact"
             className="p-2 hover:bg-red-700 hover:scale-105 transform transition-all duration-300 rounded-xl border border-white flex items-center gap-2 justify-center w-full"
           >
             <img src="/assets/phoneLogo.svg" className="w-5" alt="Contact Us" />

@@ -65,7 +65,7 @@ const Testimonials = () => {
     <div className="mt-20">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-gray-800 text-2xl md:text-3xl font-extrabold">What our customers say</h2>
+          <h2 className="font-allura  text-4xl md:text-6xl font-extrabold">What our customers say</h2>
           <p className="text-sm text-gray-800 mt-3 pb-5 leading-relaxed px-3">
             We value our customers and always aim to provide the best service. Here's what they have to say about us!
           </p>

@@ -63,7 +63,7 @@ export const products = {
       name: "Pizza T-shirt",
       description: "A trendy t-shirt for pizza lovers.",
       price: 399.00,
-      imageUrl: "/assets/ariel.jpg",
+      imageUrl: "/assets/PizzaFlavor/Pesto.jpg",
     },
     {
       id: 2,

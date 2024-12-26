@@ -7,6 +7,8 @@ import Featured from './pages/Featured';
 import Footer from './pages/Footer'; 
 import Menu from './pages/Menu';
 import Location from './pages/Location';
+import Contact from './pages/Contact';
+import FAQ from './pages/FAQ';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/featured" element={<Featured />} /> 
           <Route path="/menu" element={<Menu />} /> 
           <Route path="/store" element={<Location />} /> 
+          <Route path="/faq" element={<FAQ />} /> 
+          <Route path="/contact" element={<Contact />} /> 
         </Routes>
       </div>
     </Router>
