@@ -23,7 +23,7 @@ const OverlayCopy = ({ subheading, heading }) => {
       <p className=" mb-2 text-center text-xl md:mb-4 md:text-3xl">
         {subheading}
       </p>
-      <p className="font-allura text-center text-4xl font-bold md:text-6xl lg:text-7xl xl:text-8xl">{heading}</p>
+      <p className="font-allura text-center text-4xl font-bold md:text-6xl lg:text-7xl xl:text-8xl text-yellow-500">{heading}</p>
     </motion.div>
   );
 };

@@ -19,7 +19,7 @@ const ProductCard = ({ imageUrl, heading, price, heightClass, onAddToCart }) => 
             {heading}
           </h3>
           <h4 className="text-sm lg:text-base text-yellow-400 font-bold mt-1">
-            {price} only
+            {price}
           </h4>
         </div>
       </div>

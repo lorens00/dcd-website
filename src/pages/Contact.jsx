@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header2 from '../components/Header2';
 
 const Contact = () => {
   // State to manage form input
@@ -30,7 +31,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="grid sm:grid-cols-2 items-start gap-16 p-8 mx-auto max-w-6xl bg-white mt-10 md:mt-20">
+    <>
+      <div className="mb-24 pb-10 md:pb-24">
+        <Header2 />
+      </div>
+      <div className="grid sm:grid-cols-2 items-start gap-16 p-8 mx-auto max-w-6xl bg-white mt-10 md:mt-20">
       <div className='bg-red-800 p-12 rounded'>
         <h1 className="font-allura text-stone-100 text-3xl lg:text-5xl font-semibold">Let's Talk!</h1>
         <p className="text-sm text-stone-50 mt-4">
@@ -126,6 +131,8 @@ const Contact = () => {
         )}
       </div>
     </div>
+    </>
+    
   );
 };
 

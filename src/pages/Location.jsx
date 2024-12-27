@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { locations } from '../data/location';
-import FooterCredits from '../components/FooterCredits'; 
+import FooterCredits from '../components/FooterCredits';
+import Header2 from '../components/Header2'; 
 
 const Location = () => {
   const [mapVisibility, setMapVisibility] = useState({});
@@ -13,8 +14,13 @@ const Location = () => {
   };
 
   return (
-    <div className="bg-gray-50 py-6">
-      <div className="container mx-auto px-4 mb-36">
+    <>
+      <div className="mb-24 md:pb-10">
+        <Header2 />
+      </div>
+
+      <div className="bg-gray-50 py-6">
+      <div className="container relative mx-auto px-4 mb-36">
         <h2 className="font-allura font-extrabold text-4xl md:text-5xl lg:text-6xl text-center md:text-start lg:py-4 text-red-800">Our Store Locations</h2>
 
         <ul>
@@ -23,7 +29,7 @@ const Location = () => {
               <div className="flex flex-col mb-2 md:mb-4">
                 <h3 className="font-semibold text-lg md:text-xl lg:text-2xl">{location.name}</h3>
 
-                <div className="mt-2 md:mt-4">
+                <div className="mt-2 md:mt-4 lg:pl-2">
                   <h4 className="font-semibold">Address:</h4>
 
                   {/* Location Section */}
@@ -33,7 +39,7 @@ const Location = () => {
                   </div>
                 </div>
 
-                <div className="mt-4">
+                <div className="mt-4 lg:pl-2">
                   <h4 className="font-semibold">Contact:</h4>
 
                   {/* Contact Section */}
@@ -83,6 +89,8 @@ const Location = () => {
       </div>
       <FooterCredits />
     </div>
+    </>
+    
   );
 };
 

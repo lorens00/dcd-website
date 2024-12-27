@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import ProductCard from '../components/ProductCard';
 import { products } from '../data/products';
 import FooterCredits from '../components/FooterCredits';
-import LoadingCard from '../components/LoadingCard'; // Assuming LoadingCard is in the components folder
+import LoadingCard from '../components/LoadingCard'; 
+import Header2 from '../components/Header2';
 
 const Menu = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -33,12 +34,19 @@ const Menu = () => {
   };
 
   return (
-    <div className="p-4 mt-2">
+
+    <>
+      <div className="mb-24 md:pb-10">
+        <Header2 />
+      </div>
+
+      <div className="p-4 mt-2">
+      
       {/* Main Content */}
       <div className="flex flex-col items-center pt-8 lg:pt-14">
 
         {/* Menu Heading */}
-        <h2 className="font-allura text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold pb-6 md:pb-8 text-center text-red-700">
+        <h2 className="font-allura text-4xl lg:text-5xl xl:text-6xl font-extrabold pb-6 md:pb-8 text-center text-red-700">
           Made for You
         </h2>
 
@@ -100,7 +108,7 @@ const Menu = () => {
               {!loadingImages && (
                 <div className="absolute bottom-0 left-0 right-0 bg-black opacity-70 p-1 text-center">
                   <h3 className="text-base md:text-lg font-semibold text-white">{product.name}</h3>
-                  <h4 className="text-sm md:text-base font-semibold text-yellow-500">₱{product.price}.00</h4>
+                  <h4 className="text-sm md:text-base font-semibold text-yellow-500">₱{product.price}.00 only</h4>
                 </div>
               )}
             </div>
@@ -112,6 +120,8 @@ const Menu = () => {
       {/* Footer Credits */}
       <FooterCredits />
     </div>
+    </>
+    
   );
 };
 

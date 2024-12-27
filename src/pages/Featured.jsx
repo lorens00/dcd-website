@@ -10,7 +10,7 @@ const Featured = () => {
   return (
     <div className="bg-gray-100 py-6">
       {/* Container for Header and Cards */}
-      <div className="container mx-auto px-4">
+      <div className="container relative mx-auto px-4">
         {/* Header Section */}
         <div className="flex justify-between items-center pb-4">
           <h3 className="font-allura font-bold text-4xl lg:text-4xl xl:text-5xl lg:pl-16">Best Sellers</h3>
