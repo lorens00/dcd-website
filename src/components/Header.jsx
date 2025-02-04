@@ -24,8 +24,8 @@ const Header = () => {
     >
       <a href="/">
         <img
-          className="w-36 md:w-48 mx-auto"
-          src="/assets/logo-white.png"
+          className="w-36 md:w-48 lg:w-56 mx-auto"
+          src="/assets/icons/logo-white.png"
           alt="Logo"
         />
       </a>

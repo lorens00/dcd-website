@@ -34,7 +34,7 @@ const Location = () => {
 
                   {/* Location Section */}
                   <div className="flex items-center mt-2">
-                    <img src="/assets/location.svg" className="w-5 mr-2" alt="Location Icon" />
+                    <img src="/assets/icons/location.svg" className="w-5 mr-2" alt="Location Icon" />
                     <p className='text-sm md:text-base'>{location.address}</p>
                   </div>
                 </div>
@@ -44,13 +44,13 @@ const Location = () => {
 
                   {/* Contact Section */}
                   <div className="flex items-center mt-2">
-                    <img src="/assets/phone2.svg" alt="Phone Icon" className="w-6 h-6 mr-2" />
+                    <img src="/assets/icons/phone2.svg" alt="Phone Icon" className="w-6 h-6 mr-2" />
                     <p className=" text-sm md:text-base">{location.contact}</p>
                   </div>
 
                   {/* Facebook Section */}
                   <div className="flex items-center mt-2">
-                    <img src="/assets/facebook2.svg" alt="Facebook Logo" className="w-6 mr-2" />
+                    <img src="/assets/icons/facebook2.svg" alt="Facebook Logo" className="w-6 mr-2" />
                     <a
                       href={location.facebookLink}
                       className=" underline font-semibold text-sm md:text-base"

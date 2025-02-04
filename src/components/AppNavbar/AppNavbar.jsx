@@ -28,9 +28,9 @@ export default function AppNavbar() {
         {/* Store Button */}
         <a
           href="/store"
-          className="p-4 md:p-4 bg-black bg-opacity-70 text-white rounded-2xl shadow-xl hover:bg-opacity-80 transition duration-300"
+          className="p-3.5 md:p-4 bg-black bg-opacity-70 text-white rounded-2xl shadow-xl hover:bg-opacity-80 transition duration-300"
         >
-          <img src="/assets/storeLogo2.svg" className="w-7" alt="" />
+          <img src="/assets/icons/storeLogo2.svg" className="w-7" alt="" />
         </a>
       </div>
 
@@ -48,7 +48,7 @@ export default function AppNavbar() {
               href="/"
               className="p-2 hover:bg-red-700 hover:scale-105 transform transition-all duration-300 rounded-xl border border-white flex items-center gap-2 justify-center w-full"
             >
-              <img src="/assets/homeLogo.svg" className="w-6" alt="Home" />
+              <img src="/assets/icons/homeLogo.svg" className="w-6" alt="Home" />
               <span className="text-sm md:text-lg">Home</span>
             </a>
 
@@ -57,7 +57,7 @@ export default function AppNavbar() {
               href="/FAQ"
               className="p-2 hover:bg-red-700 hover:scale-105 transform transition-all duration-300 rounded-xl border border-white flex items-center gap-2 justify-center w-full"
             >
-              <img src="/assets/question.svg" className="w-6" alt="FAQs" />
+              <img src="/assets/icons/question.svg" className="w-6" alt="FAQs" />
               <span className="text-sm md:text-lg">FAQs</span>
             </a>
 
@@ -66,8 +66,8 @@ export default function AppNavbar() {
               href="/contact"
               className="p-2 hover:bg-red-700 hover:scale-105 transform transition-all duration-300 rounded-xl border border-white flex items-center gap-2 justify-center w-full"
             >
-              <img src="/assets/phoneLogo.svg" className="w-5" alt="Contact Us" />
-              <span className="text-sm md:text-lg">Contact Us</span>
+              <img src="/assets/icons/phoneLogo.svg" className="w-5" alt="Contact Us" />
+              <span className="text-sm md:text-lg">Contact</span>
             </a>
           </div>
         </motion.div>

@@ -25,7 +25,7 @@ const Header = () => {
       <a href="/">
         <img
           className="w-36 md:w-44 mx-auto"
-          src="/assets/logo.png"
+          src="/assets/icons/logo.png"
           alt="Logo"
         />
       </a>

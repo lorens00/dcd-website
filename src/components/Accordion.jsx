@@ -4,10 +4,10 @@ const Accordion = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="accordion rounded-lg hover:bg-red-50 transition-all">
+    <div className="accordion rounded-lg hover:bg-red-50 transition-all pb-3 lg:pb-2">
       <button
         type="button"
-        className="toggle-button w-full lg:text-lg text-left py-5 px-6 text-gray-800 flex items-center"
+        className="toggle-button w-full lg:text-xl font-semibold text-left py-5 px-6 text-gray-800 flex items-center"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="mr-4">{question}</span>
