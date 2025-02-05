@@ -25,7 +25,7 @@ const Location = () => {
         <div className='flex justify-between'>
           <h2 className="font-allura font-extrabold text-4xl md:text-5xl lg:text-6xl text-center md:text-start lg:py-4 text-red-800 ">Our Store Locations</h2>
           <div>
-            <SearchBar />
+            {/*<SearchBar / */>
         </div>
         </div>
         
