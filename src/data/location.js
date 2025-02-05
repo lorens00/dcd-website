@@ -167,7 +167,7 @@ export const locations = [
       facebook: "DelishCheese Dough Magalang",
       facebookLink:"https://www.facebook.com/DelishCheeseDoughMagalang",
       mapLink:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15400.109817291928!2d120.64480561877296!3d15.21166386657944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396efe7e91a402f%3A0xeb59c3dac8c015b9!2sDelishCheese%20Dough%20Magalang!5e0!3m2!1sen!2sph!4v1738726295828!5m2!1sen!2sph",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3852.958313099916!2d120.70253387577905!3d15.050421865904234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f76ac2ed686f%3A0x718a5bd6836b44ca!2sDelishCheese%20Dough%20Mexico!5e0!3m2!1sen!2sph!4v1738748007180!5m2!1sen!2sph",
     },
     {
       id: 18,
