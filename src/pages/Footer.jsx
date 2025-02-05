@@ -8,7 +8,7 @@ const Footer = () => {
 
           {/* Logo Section */}
           <div className="flex lg:col-span-1 max-w-md md:pr-0 lg:pr-12 justify-center md:justify-normal">
-            <a href="/"><img src="/assets/icons/logo.png" alt="DelishCheese Dough Logo" className="h-16 md:h-20" /></a>
+            <a href="/"><img src="/assets/icons/logo.png" alt="DelishCheese Dough Logo" className="h-16" /></a>
           </div>
 
           {/* About Us Section */}

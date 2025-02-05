@@ -26,6 +26,10 @@ export const faqs = [
     {
       question: "Got merch? What cool stuff can I grab?",
       answer: "Yes, we offer a selection of high-quality merchandise, including branded t-shirts, hoodies, mugs, caps, and tote bags. Visit our store or check our website for the full range of products available.",
+    },
+    {
+      question: "Can I order through Grab or Food Panda?",
+      answer: "Yes, you can order from us through both Grab and Food Panda for delivery.",
     }
   ];
   

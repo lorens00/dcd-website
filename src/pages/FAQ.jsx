@@ -17,7 +17,7 @@ const FAQ = () => {
         </h2>
 
         {/* FAQs List */}
-        <div className="-space-y-4 lg:space-y-5 mb-20">
+        <div className="-space-y-6 lg:space-y-4 mb-20">
           {faqs.map((faq, index) => (
             <div key={index} className="pb-3">
               <Accordion 

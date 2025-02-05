@@ -39,7 +39,7 @@ const About = () => {
         </div>
       </AboutSection>
       <AboutSection
-        imgUrl="https://via.placeholder.com/600x400?text=Image+Here"
+        imgUrl="/assets/banner/about3.jpg"
         subheading="Exclusive Merch"
         heading="Just for You"
       >

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import TestimonialCard from "../components/Testimonials/TestimonialCard";
 import testimonials from "../data/testimonials"; 
@@ -9,6 +9,23 @@ const Testimonials = () => {
 
   const [currentPage, setCurrentPage] = useState(0);
   const [direction, setDirection] = useState("next");
+  const [shuffledTestimonials, setShuffledTestimonials] = useState([]);
+
+  // Fisher-Yates Shuffle algorithm
+  const shuffleArray = (array) => {
+    let shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; // Swap
+    }
+    return shuffled;
+  };
+
+  useEffect(() => {
+    // Shuffle the testimonials when the component is first loaded
+    const shuffled = shuffleArray(testimonials);
+    setShuffledTestimonials(shuffled);
+  }, []);
 
   const handlePrev = () => {
     setDirection("prev");
@@ -21,7 +38,7 @@ const Testimonials = () => {
   };
 
   const startIndex = currentPage * cardsPerPage;
-  const currentTestimonials = testimonials.slice(startIndex, startIndex + cardsPerPage);
+  const currentTestimonials = shuffledTestimonials.slice(startIndex, startIndex + cardsPerPage);
 
   return (
     <div className="mt-20">
