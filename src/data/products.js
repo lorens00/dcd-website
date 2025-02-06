@@ -70,7 +70,7 @@ export const products = {
       id: 12,
       name: "All Meat",
       price: 359.00,
-      imageUrl: "/assets/PizzaFlavor/AllMeat.jpg",
+      imageUrl: "/assets/PizzaFlavor/allMeat.jpg",
     },
     {
       id: 13,
@@ -92,32 +92,32 @@ export const products = {
     {
       id: 15,
       name: "DCD T-shirt",
-      imageUrl: "/assets/Merch/tshirt.jpg",
+      imageUrl: "/assets/merch/tshirt.jpg",
     },
     {
       id: 16,
       name: "DCD Hat",
-      imageUrl: "/assets/Merch/hat.jpg",
+      imageUrl: "/assets/merch/hat.jpg",
     },
     {
       id: 17,
       name: "DCD Mug",
-      imageUrl: "/assets/Merch/mug.jpg",
+      imageUrl: "/assets/merch/mug.jpg",
     },
     {
       id: 18,
       name: "DCD Tumbler",
-      imageUrl: "/assets/Merch/tumbler.jpg",
+      imageUrl: "/assets/merch/tumbler.jpg",
     },
     {
       id: 19,
       name: "DCD Umbrella",
-      imageUrl: "/assets/Merch/umbrella.jpg",
+      imageUrl: "/assets/merch/umbrella.jpg",
     },
     {
       id: 20,
       name: "DCD Pen",
-      imageUrl: "/assets/Merch/pen.jpg",
+      imageUrl: "/assets/merch/pen.jpg",
     },
   ],
 };

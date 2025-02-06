@@ -13,13 +13,13 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <div className=" mb-3 md:mb-4 flex justify-center pt-3">
+    <div className="pt-2 pb-8 flex justify-center">
       <div className="relative w-2/3 lg:w-1/3 max-w-full">
         <input
           type="text"
           value={query}
           onChange={handleSearch}
-          placeholder="Search location..."
+          placeholder="Search nearby store"
           className="w-full pl-10 pr-4 py-1.5 md:py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-1 focus:ring-red-500"
         />
         <img
@@ -62,7 +62,7 @@ const Location = () => {
       <div className="bg-gray-50 py-6 overflow-x-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-36 max-w-7xl">
           <h2 className="font-allura font-extrabold text-4xl md:text-5xl lg:text-6xl text-center lg:py-4 text-red-800">
-            Our Store Locations
+          Place Your Order Now
           </h2>
           <SearchBar onSearch={handleSearch} />
           <ul className="space-y-4">
