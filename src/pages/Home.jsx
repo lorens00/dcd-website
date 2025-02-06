@@ -33,12 +33,12 @@ export default function Home() {
           {/* Buttons Section */}
           <div className="flex justify-center lg:justify-start space-x-4">
             <a href="/store">
-              <button className="bg-yellow-400 text-black px-5 lg:px-8 py-2.5 lg:py-4 rounded-lg hover:bg-yellow-500 transition duration-300 text-sm sm:text-base lg:font-semibold">
+              <button className="bg-yellow-400 text-black px-5 lg:px-7 py-2.5 lg:py-3.5 rounded-lg hover:bg-yellow-500 transition duration-300 text-sm sm:text-base lg:font-semibold">
                 Order Now
               </button>
             </a>
             <a href="/contact">
-              <button className="outline outline-1 outline-yellow-400 text-yellow-400 px-5 lg:px-8 py-2.5 lg:py-4 lg:font-semibold rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300 text-sm sm:text-base">
+              <button className="outline outline-1 outline-yellow-400 text-yellow-400 px-5 lg:px-7 py-2.5 lg:py-3.5 lg:font-semibold rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300 text-sm sm:text-base">
                 Contact Us
               </button>
             </a>
