@@ -13,14 +13,14 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <div className="pt-2 pb-8 flex justify-center">
+    <div className="pt-5 pb-4 md:pt-2 md:pb-8 flex justify-center">
       <div className="relative w-2/3 lg:w-1/3 max-w-full">
         <input
           type="text"
           value={query}
           onChange={handleSearch}
           placeholder="Search nearby store"
-          className="w-full pl-10 pr-4 py-1.5 md:py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-1 focus:ring-red-500"
+          className="w-full pl-10 pr-4 py-1.5 md:py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-1 focus:ring-red-500 text-sm md:text-base"
         />
         <img
           src="/assets/icons/search.svg"
@@ -29,7 +29,7 @@ const SearchBar = ({ onSearch }) => {
         />
       </div>
     </div>
-  );
+  )
 };
 
 const Location = () => {

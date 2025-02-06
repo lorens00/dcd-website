@@ -25,7 +25,7 @@ const About = () => {
       <AboutSection
         imgUrl="/assets/banner/about02.jpg"
         subheading="Affordable Prices"
-        heading="Pizza for Every Occasion"
+        heading="Pizza for Every Occasion     "
       >
          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
           <h2 className="col-span-1 px-3 text-2xl md:text-3xl font-bold md:col-span-4">

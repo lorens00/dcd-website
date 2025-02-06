@@ -40,7 +40,7 @@ export default function AppNavbar() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 50 }}
-          className="inset-x-0 fixed bottom-32 md:bottom-32 flex items-center justify-center w-[70%] h-40 md:h-48 max-w-lg mx-auto bg-black bg-opacity-90 text-white rounded-xl shadow-xl p-4 z-50"
+          className="inset-x-0 fixed bottom-28 md:bottom-32 flex items-center justify-center w-[70%] h-40 md:h-48 max-w-lg mx-auto bg-black bg-opacity-90 text-white rounded-xl shadow-xl p-4 z-50"
         >
           <div className="flex flex-col gap-2 w-11/12">
             {/* Home Item */}
