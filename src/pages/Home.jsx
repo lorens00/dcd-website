@@ -5,6 +5,7 @@ import Featured from "./Featured";
 import Testimonials from "./Testimonials";
 import Footer from "./Footer";
 import Header from "../components/Header";
+import Carousel from "../components/Carousel";
 
 export default function Home() {
   return (
@@ -44,6 +45,10 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </div>
+
+      <div>
+        <Carousel />
       </div>
 
       <div className="my-5">

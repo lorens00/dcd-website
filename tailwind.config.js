@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         allura: ['allura ', 'cursive'],
+        raleway: ['raleway'],
       },
     },
   },

@@ -1,44 +1,54 @@
 import React from 'react';
-import { products } from '../data/products'; 
-import ProductCard from '../components/ProductCard';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 const Featured = () => {
-  // Limit the number of products
-  const featuredProducts = products.pizza.slice(0, 5);
-
   return (
-    <div className="bg-gray-100 py-6">
-      {/* Container for Header and Cards */}
-      <div className="container relative mx-auto px-4">
-        {/* Header Section */}
+    <div className="bg-gray-100 py-10 ">
+      <div className="container mx-auto px-4">
+        {/* Header */}
         <div className="flex justify-between items-center pb-4">
-          <h3 className="font-allura font-bold text-4xl lg:text-4xl xl:text-5xl lg:pl-16">Best Sellers</h3>
-          <Link
-            to="/menu"
-            className="text-red-500 hover:underline mt-2 inline-block text-xs lg:text-lg lg:pr-16"
-          >
+          <h3 className="font-bold text-4xl">Best Sellers</h3>
+          <Link to="/menu" className="text-red-500 hover:underline text-lg">
             VIEW ALL
           </Link>
         </div>
 
         {/* Cards Section */}
-        <div className="overflow-x-auto pb-6 snap-x snap-mandatory no-scrollbar flex justify-start -space-x-6 lg:-space-x-6 xl:justify-center">
-          {featuredProducts.map((product, index) => (
-            <div
-              key={product.id}
-              className="flex-shrink-0 snap-start w-56 sm:w-64 md:w-56 lg:w-64"
-            >
-              <ProductCard
-                imageUrl={product.imageUrl || 'https://via.placeholder.com/300x200?text=No+Image'}
-                heading={product.name || 'Unnamed Product'}
-                subheading={product.description || 'No description available'}
-                price={`₱${product.price.toFixed(2)}`}
-                altText={product.name || 'Product Image'}
-                heightClass="h-60" 
-              />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {/* Big Card */}
+          <div className="lg:col-span-2 sm:col-span-2 col-span-2 relative rounded-lg overflow-hidden">
+            <img
+              src="assets/banner/featured.jpg"
+              alt="Big Featured"
+              className="w-full h-72 sm:h-64 object-cover"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6 text-white">
+              <h2 className="text-xl sm:text-lg font-bold">Special Pizza</h2>
+              <p className="text-sm">Delicious cheesy pizza with fresh toppings.</p>
             </div>
-          ))}
+          </div>
+
+          {/* Small Cards (Grid Layout) */}
+          <div className="grid grid-cols-2 lg:grid-cols-2 gap-3 col-span-2">
+            {[
+              { name: "All Meat", price: "₱359.00", src: "/assets/PizzaFlavor/AllMeat.jpg" },
+              { name: "Kaniyaki", price: "₱389.00", src: "/assets/PizzaFlavor/Kaniyaki.jpg" },
+              { name: "Pesto", price: "₱359.00", src: "/assets/PizzaFlavor/Pesto.jpg" },
+              { name: "Garlic Seafood", price: "₱439.00", src: "/assets/PizzaFlavor/Garlic Seafood.jpg" }
+            ].map((item, index) => (
+              <div key={index} className="relative rounded-lg overflow-hidden">
+                <img
+                  src={item.src}
+                  alt={item.name}
+                  className="w-full h-64 sm:h-56 object-cover"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 text-white">
+                  <h3 className="text-lg font-bold">{item.name}</h3>
+                  <p className="text-sm">{item.price}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

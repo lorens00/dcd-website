@@ -1,7 +1,7 @@
 export const locations = [
     {
       id: 1,
-      name: "Angeles City Pampanga",
+      name: "Angeles City, Pampanga",
       address: "18-10 Gueco  corner. Rosanna st. Mt view balibago  Angeles city",
       contact: "0916-497-8954",
       facebook: "DelishCheese Dough Angeles",
@@ -11,7 +11,7 @@ export const locations = [
     },
     {
       id: 2,
-      name: "Apalit Pampanga",
+      name: "Apalit, Pampanga",
       address: "Gonzales Ave. Corner Lourdes St.Purok 2 San Juan Apalit Pampanga",
       contact: "0966-657-0822",
       facebook: "DelishCheese Dough Apalit",
@@ -21,7 +21,7 @@ export const locations = [
     },
     {
       id: 3,
-      name: "Arayat Pampanga",
+      name: "Arayat, Pampanga",
       address: "Mangga Cacutud Arayat Pampanga (RAM BLDG, Infront of Cacutud Elementary School)",
       contact: "0955-997-6004",
       facebook: "DelishCheese Dough Arayat",
@@ -31,7 +31,7 @@ export const locations = [
     },
     {
       id: 4,
-      name: "Bamban Tarlac",
+      name: "Bamban, Tarlac",
       address: "Rodlea building Brgy. Anupul Bamban Tarlac",
       contact: "0938-940-9130 / 0991-737-4886",
       facebook: "DelishCheese Dough Bamban",
@@ -41,7 +41,7 @@ export const locations = [
     },
     {
       id: 5,
-      name: "Balanga Bataan",
+      name: "Balanga, Bataan",
       address: "GNL Bldg. Brgy. Ibayo, Balanga, Bataan (former location of Kowloon Bataan)",
       contact: "0956-851-4328",
       facebook: "DelishCheese Dough Balanga",
@@ -51,7 +51,7 @@ export const locations = [
     },
     {
       id: 6,
-      name: "Camiling Tarlac",
+      name: "Camiling, Tarlac",
       address: "G/F Camiling Town Center, Arellano St, Camiling, 2306 Tarlac, Camiling, Philippines",
       contact: "0966-446-9896",
       facebook: "DelishCheese Dough Camiling",
@@ -61,7 +61,7 @@ export const locations = [
     },
     {
       id: 7,
-      name: "Capas Tarlac",
+      name: "Capas, Tarlac",
       address: "DelishCheese Dough Capas, stella maris building, 56 R-9, Capas, 2315 Tarlac, Capas, Philippines, 2315",
       contact: "0916-608-1591",
       facebook: "DelishCheese Dough Capas",
@@ -71,7 +71,7 @@ export const locations = [
     },
     {
       id: 8,
-      name: "Concepcion Tarlac",
+      name: "Concepcion, Tarlac",
       address: "Tique Building, little baguio, San Nicolas, Poblacion, Concepcion, Tarlac.",
       contact: "0968-7249-274 / 0915-8849-254",
       facebook: "DelishCheese Dough Concepcion",
@@ -81,7 +81,7 @@ export const locations = [
     },
     {
       id: 9,
-      name: "Downtown San Fernando",
+      name: "Downtown San Fernando City, Pampanga",
       address: "Consunji Street,Albertos Bldg. Sto Rosario CSFP",
       contact: "0905-773-1709",
       facebook: "DelishCheese Dough Downtown CSFP",
@@ -91,7 +91,7 @@ export const locations = [
     },
     {
       id: 10,
-      name: "Floridablanca Pampanga",
+      name: "Floridablanca, Pampanga",
       address: " 21 Mabical, Floridablanca",
       contact: " 0927-881-5465",
       facebook: "DelishCheese Dough Floridablanca",
@@ -101,7 +101,7 @@ export const locations = [
     },
     {
       id: 11,
-      name: "Gerona Tarlac",
+      name: "Gerona, Tarlac",
       address: "Poblacion 2 Gerona Tarlac",
       contact: "0956-048-5279",
       facebook: "DelishCheese Dough Gerona",
@@ -111,7 +111,7 @@ export const locations = [
     },
     {
       id: 12,
-      name: "Guagua Pampanga",
+      name: "Guagua, Pampanga",
       address: "Guagua Business Center, JASA, Guagua, Pampanga",
       contact: " 0995-272-8272",
       facebook: "DelishCheese Dough Guagua",
@@ -121,7 +121,7 @@ export const locations = [
     },
     {
       id: 13,
-      name: "Guiguinto Bulacan",
+      name: "Guiguinto, Bulacan",
       address: "Ground Floor, Unit 2, One Verde Commercial, Mc Arthur Highway, Poblacion, Guiguinto, Philippines",
       contact: " 0915-711-1788",
       facebook: "DelishCheese Dough Guiguinto",
@@ -131,7 +131,7 @@ export const locations = [
     },
     {
       id: 14,
-      name: "La Paz Tarlac",
+      name: "La Paz, Tarlac",
       address: "L Plaza, San Isidro La Paz Tarlac",
       contact: "0915-168-2444",
       facebook: "DelishCheese Dough La Paz",
@@ -141,7 +141,7 @@ export const locations = [
     },
     {
       id: 15,
-      name: "Luisita Tarlac",
+      name: "Luisita, Tarlac",
       address: "Matatalaib Tarlac City",
       contact: "0907-988-0910",
       facebook: "DelishCheese Dough Luisita",
@@ -151,7 +151,7 @@ export const locations = [
     },
     {
       id: 16,
-      name: "Mabalacat City Pampanga",
+      name: "Mabalacat City, Pampanga",
       address: "Clark gateway Commercial Complex, Gil Puyat Avenue, Mabalacat City",
       contact: "0977-243-1550",
       facebook: "DelishCheese Dough Mabalacat",
@@ -161,7 +161,7 @@ export const locations = [
     },
     {
       id: 17,
-      name: "Magalang Pampanga",
+      name: "Magalang, Pampanga",
       address: "Dan & rod properties inc. A-7 c/o  San Pedro Ii, Magalang, North Luzon, Pampanga, 2009",
       contact: "0915-054-0628",
       facebook: "DelishCheese Dough Magalang",
@@ -171,7 +171,7 @@ export const locations = [
     },
     {
       id: 18,
-      name: "Mexico Pampanga",
+      name: "Mexico, Pampanga",
       address: "L'plaza bldg., Jose Abad Santos Ave., Brgy. Lagundi, Mexico, Pampanga.",
       contact: "0969-344-8521",
       facebook: "DelishCheese Dough Mexico",
@@ -181,7 +181,7 @@ export const locations = [
     },
     {
       id: 19,
-      name: "Meycauayan Bulacan",
+      name: "Meycauayan, Bulacan",
       address: "Branch Address: Ac Twin bldg., Lot 12 block 1 Centro Rosas, McArthur Hiway, Saluysoy, Meycuayan.",
       contact: "0956-823-5355",
       facebook: "DelishCheese Dough Meycauayan",
@@ -191,7 +191,7 @@ export const locations = [
     },
     {
       id: 20,
-      name: "Paniqui Tarlac",
+      name: "Paniqui, Tarlac",
       address: "Gomez Street Poblacion Sur Paniqui Tarlac",
       contact: "0956-048-5293",
       facebook: "DelishCheese Dough Paniqui",
@@ -201,7 +201,7 @@ export const locations = [
     },
     {
       id: 21,
-      name: "Porac Pampanga",
+      name: "Porac, Pampanga",
       address: "Edna David Arcade Gen. Luna St. Brgy. Poblacion Porac Pampanga",
       contact: "0995-846-0790",
       facebook: "DelishCheese Dough Porac",
@@ -211,7 +211,7 @@ export const locations = [
     },
     {
       id: 22,
-      name: "Sindalan Pampanga",
+      name: "Sindalan, Pampanga",
       address: "Timerika Bldg. Sindalan CSFP(Beside BPI Sindalan)",
       contact: "0991-974-2246",
       facebook: "DelishCheese Dough Sindalan",
@@ -221,7 +221,7 @@ export const locations = [
     },
     {
       id: 23,
-      name: "Subic Zambales",
+      name: "Subic, Zambales",
       address: "NH Baraca - Camachile Subic Zambales ",
       contact: "0945-489-3838 / 0917-635-0838",
       facebook: "DelishCheese Dough Subic",
