@@ -22,7 +22,7 @@ export default function Home() {
 
         {/* Content Section */}
         <div className="container relative z-10 text-white max-w-2xl mx-auto text-center lg:text-left lg:ml-16 xl:ml-20 md:pr-8">
-          <h1 className="font-allura text-5xl md:text-7xl xl:text-8xl font-bold ">
+          <h1 className="font-allura text-5xl md:text-7xl xl:text-8xl font-medium ">
             A Better Pizza
           </h1>
           <p className="text-base lg:text-xl sm:text-lg mb-6 text-gray-50 font-light px-4 md:px-0 py-0.5">
@@ -55,15 +55,7 @@ export default function Home() {
         <About />
       </div>
 
-      <motion.div 
-      className="pt-3 pb-8 my-8 lg:my-2 px-2"
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-      viewport={{ once: true }}
-      >
-        <Featured />
-      </motion.div>
+      
 
       <motion.div
         className="pt-1 pb-10 my-10 lg:my-2 px-2"
