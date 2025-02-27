@@ -39,7 +39,7 @@ const About = () => {
         subheading="Affordable Prices"
         heading="Pizza for Every Occasion"
       >
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-16 pt-12 md:grid-cols-12">
           <h2 className="col-span-1 px-3 text-2xl md:text-3xl font-bold md:col-span-4">
             Great Pizza, Great Prices
           </h2>
@@ -52,7 +52,7 @@ const About = () => {
       </AboutSection>
 
       <motion.div
-        className="pt-1 pb-10 my-10 lg:my-2 px-2"
+        className="pb-28 my-5 lg:my-2 px-2"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
