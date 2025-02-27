@@ -10,6 +10,16 @@ export const locations = [
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.820525095996!2d120.59314587580434!3d15.168198062927042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396edf25f61aeff%3A0x43cf949da9bedb2b!2sDelishCheese%20Dough%20Angeles!5e0!3m2!1sen!2sph!4v1735176513467!5m2!1sen!2sph",
     },
     {
+      id: 25,
+      name: "Olongapo City, Zambales",
+      address: "Branch Address: Ac Twin bldg., Lot 12 block 1 Centro Rosas, McArthur Hiway, Saluysoy, Meycuayan.",
+      contact: "0956-823-5355",
+      facebook: "DelishCheese Dough Meycauayan",
+      facebookLink:"https://www.facebook.com/DelishCheeseDoughMeycauayan",
+      mapLink:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7716.783731756915!2d120.95318053488768!3d14.746939100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b368bf1e1c99%3A0x994e185e8d83753!2sDelishCheese%20Dough%20Meycauayan!5e0!3m2!1sen!2sph!4v1738726510700!5m2!1sen!2sph",
+    },
+    {
       id: 2,
       name: "Apalit, Pampanga",
       address: "Gonzales Ave. Corner Lourdes St.Purok 2 San Juan Apalit Pampanga",
