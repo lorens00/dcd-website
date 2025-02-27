@@ -22,7 +22,7 @@ const Featured = () => {
               alt="Big Featured"
               className="w-full sm:h-64 md:h-80 lg:h-fit xl:h-[61.5vh] sm:object-fill md:object-cover md:object-center lg:object-cover"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6 text-white">
+            <div className="absolute inset-0 bg-black bg-opacity-25 flex flex-col justify-end p-6 text-white">
               <h2 className="text-xl sm:text-lg font-bold">Special Pizza</h2>
               <p className="text-sm">Delicious cheesy pizza with fresh toppings.</p>
             </div>
@@ -42,7 +42,7 @@ const Featured = () => {
                   alt={item.name}
                   className="w-[35vh] h-56 md:h-64 md:w-[36vh] xl:h-[30vh] object-cover"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-35 flex flex-col justify-end p-4 text-white">
+                <div className="absolute inset-0 bg-black bg-opacity-25 flex flex-col justify-end p-4 text-white">
                   <h3 className="text-lg font-bold">{item.name}</h3>
                   <p className="text-sm">{item.price}</p>
                 </div>

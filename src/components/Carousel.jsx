@@ -51,7 +51,7 @@ export default function Carousel({ className = "", autoPlay = true, interval = 8
 
   return (
     <div className={className}>
-      <h2 className="font-allura text-4xl md:text-6xl font-semibold mb-1.5 md:mb-0 text-center lg:text-start mt-16 lg:mt-20 xl:pl-24 lg:pl-14">New Deals & Events!</h2>
+      <h2 className="font-ostrichmedium text-3xl md:text-6xl font-normal mb-1.5 md:mb-0 text-start pl-3 mt-16 lg:mt-20 xl:pl-24 lg:pl-14">New Deals & Events!</h2>
       <div className="relative w-full flex flex-col items-center overflow-hidden mb-20">
         <div className="relative w-full md:w-11/12 aspect-[5/3] md:aspect-[4/3] lg:aspect-[8/5] xl:aspect-[12/6] flex items-center justify-center px-3">
           <div className="relative w-full h-[95%] md:h-[80%] lg:h-[90%] overflow-hidden shadow-lg">

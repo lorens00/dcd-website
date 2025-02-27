@@ -21,8 +21,8 @@ export default function Home() {
         <div className="bg-black bg-opacity-40 absolute top-0 left-0 w-full h-full"></div>
 
         {/* Content Section */}
-        <div className="container relative z-10 text-white max-w-2xl mx-auto text-center lg:text-left lg:ml-16 xl:ml-20 md:pr-8">
-          <h1 className="font-allura text-5xl md:text-7xl xl:text-8xl font-medium ">
+        <div className="container relative z-10 text-white max-w-2xl mx-auto text-center lg:text-left lg:ml-16 xl:ml-20 md:pr-0">
+          <h1 className="font-ostrichbold text-6xl md:text-7xl xl:text-8xl ">
             A Better Pizza
           </h1>
           <p className="text-base lg:text-xl sm:text-lg mb-6 text-gray-50 font-light px-4 md:px-0 py-0.5">

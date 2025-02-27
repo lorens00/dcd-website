@@ -8,6 +8,10 @@ module.exports = {
       fontFamily: {
         allura: ['allura ', 'cursive'],
         raleway: ['raleway'],
+        outfit: ['outfit'],
+        poppins: ['poppins'],
+        ostrichbold: ['ostrichbold', 'sans-serif'],
+        ostrichmedium: ['ostrichmedium']
       },
     },
   },

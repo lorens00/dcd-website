@@ -41,7 +41,7 @@ const Testimonials = () => {
   const currentTestimonials = shuffledTestimonials.slice(startIndex, startIndex + cardsPerPage);
 
   return (
-    <div className="mt-20">
+    <div className="mt-10">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-allura text-4xl md:text-6xl font-extrabold">

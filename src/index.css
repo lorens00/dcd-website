@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'ostrichbold';
+src: url('./assets/fonts/ostrich-sans/OstrichSans-Bold.otf')     
+    format('opentype'),      
+}
 
-body{
+@font-face {
+    font-family: 'ostrichmedium';
+src: url('./assets/fonts/ostrich-sans/OstrichSans-Medium.otf')
+     format('truetype');    
+}
+
+
+body {
     @apply font-raleway;
 }
