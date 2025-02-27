@@ -73,13 +73,13 @@ export default function Carousel({ className = "", autoPlay = true, interval = 8
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerPolicy="strict-origin-when-cross-origin"
                       allowFullScreen
-                      className="w-full h-full object-cover rounded-2xl"
+                      className="w-full h-full object-cover"
                     ></iframe>
                   ) : (
                     <motion.img
                       src={item.src}
                       alt={`Slide ${index + 1}`}
-                      className="w-full h-full object-cover rounded-2xl"
+                      className="w-full h-full object-cover"
                       drag="x"
                       dragConstraints={{ left: 0, right: 0 }}
                       initial={{ x: directionRef.current * 100, opacity: 0 }}
@@ -111,7 +111,7 @@ export default function Carousel({ className = "", autoPlay = true, interval = 8
               &#10095;
             </button>
 
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 p-2 rounded-full">
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 p-2 ">
               {media.map((_, i) => (
                 <span
                   key={i}

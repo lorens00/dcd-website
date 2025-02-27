@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import AboutSection from "../components/About/AboutSection";
 import Featured from "./Featured";
+import Testimonials from "./Testimonials";
 
 const About = () => {
   return (
@@ -24,7 +25,7 @@ const About = () => {
       </AboutSection>
 
       <motion.div 
-        className="mb-20"
+        className="mb-20 lg:pb-32"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -49,6 +50,16 @@ const About = () => {
           </div>
         </div>
       </AboutSection>
+
+      <motion.div
+        className="pt-1 pb-10 my-10 lg:my-2 px-2"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <Testimonials />
+      </motion.div>
       
       <AboutSection
         imgUrl="/assets/banner/about3.jpg"

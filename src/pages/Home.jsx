@@ -54,18 +54,9 @@ export default function Home() {
       <div className="my-5">
         <About />
       </div>
-
       
 
-      <motion.div
-        className="pt-1 pb-10 my-10 lg:my-2 px-2"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: true }}
-      >
-        <Testimonials />
-      </motion.div>
+      
 
       <Footer />
     </>
