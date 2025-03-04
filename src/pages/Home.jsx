@@ -72,6 +72,10 @@ export default function Home() {
       <div className="my-5">
         <About />
       </div>
+
+      <div>
+        <Footer />
+      </div>
     </>
   );
 }

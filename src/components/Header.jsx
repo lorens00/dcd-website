@@ -19,10 +19,10 @@ const Header = () => {
   return (
     <motion.div
       className={`fixed top-0 left-0 right-0 z-50 p-5 ${
-        isVisible ? "opacity-100" : "opacity-0"
-      } transition-opacity duration-500 bg-transparent`}
+        isVisible ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+      } transition-opacity duration-200 bg-transparent`}
     >
-      <a href="/">
+      <a href="/" className={`${isVisible ? "pointer-events-auto" : "pointer-events-none"}`}>
         <img
           className="w-36 md:w-48 lg:w-56 mx-auto"
           src="/assets/icons/logo-white.png"
