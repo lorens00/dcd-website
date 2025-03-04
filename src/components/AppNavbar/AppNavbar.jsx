@@ -15,7 +15,7 @@ export default function AppNavbar() {
 
     // Home page logic: show navbar after scrolling past a certain point
     const handleScroll = () => {
-      const scrollThreshold = 700; // Adjust based on carousel height
+      const scrollThreshold = 500; // Adjust based on carousel height
       setIsNavbarVisible(window.scrollY > scrollThreshold);
     };
 

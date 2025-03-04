@@ -81,7 +81,7 @@ const Location = () => {
 
       <div className="bg-red-800 py-6 overflow-x-hidden pt-28 md:pt-36">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-36 max-w-7xl">
-          <h2 className="font-allura font-extrabold text-4xl md:text-5xl lg:text-6xl text-center lg:py-4 text-white pt-12">
+          <h2 className="font-ostrichmedium tracking-wide font-extrabold text-4xl md:text-5xl lg:text-6xl text-center lg:py-4 text-white pt-12">
             Find a Branch Near You!
           </h2>
           <SearchBar onSearch={handleSearch} toggleFilter={toggleFilter} isFilterOpen={isFilterOpen} />
