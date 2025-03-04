@@ -7,11 +7,14 @@ const Featured = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="flex justify-between items-center pb-4">
-          <h3 className="font-bold text-4xl">Best Sellers</h3>
-          <Link to="/menu" className="text-red-500 hover:underline text-lg">
-            VIEW ALL
+          <h3 className="font-ostrichmedium font-bold text-6xl ml-48 tracking-wide">Best Sellers</h3>
+          <Link to="/menu" className="font-ostrichmedium font-semibold text-red-500 text-2xl mr-48 flex items-center gap-2 tracking-wide hover:underline hover:text-red-600">
+            MORE FLAVORS
+            <img src="/assets/icons/right-arrow.svg" className="w-6 transition-transform duration-200 hover:translate-x-1" alt="" />
           </Link>
         </div>
+
+
 
         {/* Cards Section */}
         <div className="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-8 gap-2 md:gap-3">

@@ -16,5 +16,5 @@ src: url('./assets/fonts/ostrich-sans/OstrichSans-Medium.otf')
 
 
 body {
-    @apply font-raleway;
+    @apply font-outfit;
 }

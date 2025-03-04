@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="bg-white">
       <AboutSection
-        imgUrl="/assets/banner/pesto.png"
+        imgUrl="/assets/banner/about2.png"
         subheading="Fresh Ingredients"
         heading="Quality You Can Taste"
       >

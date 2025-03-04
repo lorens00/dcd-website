@@ -44,8 +44,8 @@ const Testimonials = () => {
     <div className="mt-10">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="font-allura text-4xl md:text-6xl font-extrabold">
-            What our customers say
+          <h2 className="font-ostrichmedium text-4xl md:text-6xl font-bold tracking-wide">
+            Don't Take It from Us
           </h2>
           <p className=" text-sm md:text-base text-gray-800 mt-3 pb-5 md:pb-7 leading-relaxed px-3">
             We value our customers and always aim to provide the best service. Here's what they have to say about us!
