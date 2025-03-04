@@ -27,20 +27,19 @@ const Menu = () => {
 
   const filteredProducts = () => {
     if (!cachedProducts) return [];
-    if (activeCategory === "all") {
-      return [...cachedProducts.pizza, ...cachedProducts.chicken, ...cachedProducts.pasta];
-    }
-    return cachedProducts[activeCategory] || [];
+    return activeCategory === "all"
+      ? [...cachedProducts.pizza, ...cachedProducts.chicken, ...cachedProducts.pasta]
+      : cachedProducts[activeCategory] || [];
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col overflow-x-hidden">
       {/* Header */}
       <div className="mb-24 md:pb-10">
         <Header2 />
       </div>
 
-      {/* Main Content (Takes Remaining Space) */}
+      {/* Main Content */}
       <div className="flex-grow">
         {/* Sticky Navigation */}
         <div className="p-4 mt-2 sticky top-0 bg-white z-10">
@@ -48,10 +47,9 @@ const Menu = () => {
             <h2 className="font-allura text-4xl lg:text-5xl xl:text-6xl font-extrabold pb-6 md:pb-8 text-center text-red-700">
               Made for You
             </h2>
-            <div className="container mx-auto px-2 mb-6 lg:px-32">
-              <div className="flex justify-center items-center -mb-6">
-                {/* Category Buttons (Centered) */}
-                <div className="flex gap-3 md:gap-6 md:gap-8 flex-wrap justify-center">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-20">
+              <div className="flex justify-center">
+                <div className="flex gap-3 md:gap-6 flex-wrap justify-center">
                   {["all", "pizza", "chicken", "pasta"].map((category) => (
                     <button
                       key={category}
@@ -71,8 +69,8 @@ const Menu = () => {
           </div>
         </div>
 
-        {/* Product Grid or "Coming Soon" */}
-        <div className="container mx-auto lg:px-20 flex justify-center">
+        {/* Product Grid */}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-20 flex justify-center">
           {loading ? (
             // Loading Animation
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-24 lg:pb-56">
@@ -81,14 +79,16 @@ const Menu = () => {
               ))}
             </div>
           ) : filteredProducts().length === 0 ? (
-            // "Coming Soon" Full-Height Centered
+            // "Coming Soon" Message
             <div className="flex flex-col items-center justify-center min-h-[50vh] pb-24 lg:pb-56">
               <img
-                src="/assets/icons/coming-soon.jfif"
+                src="/assets/banner/waiting.svg"
                 alt="Coming Soon"
-                className="w-64 object-fill"
+                className="w-72 object-contain"
               />
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-gray-600 mt-4">Coming Soon...</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-600 mt-4">
+                Coming Soon...
+              </h2>
             </div>
           ) : (
             // Product List
@@ -96,16 +96,16 @@ const Menu = () => {
               {filteredProducts().map((product) => (
                 <div
                   key={product.id}
-                  className="relative flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 max-w-xs w-full"
+                  className="relative flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 max-w-xs w-full"
                 >
                   <img
                     src={product.imageUrl}
                     alt={product.name}
                     className="w-full h-72 object-cover"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-black opacity-70 p-1 text-center">
+                  <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-2 text-center">
                     <h3 className="text-base md:text-lg font-semibold text-white">{product.name}</h3>
-                    <h4 className="text-sm md:text-base font-semibold text-yellow-500 font-outfit">
+                    <h4 className="text-sm md:text-base font-semibold text-yellow-500">
                       ₱{product.price}.00 only
                     </h4>
                   </div>
@@ -116,7 +116,7 @@ const Menu = () => {
         </div>
       </div>
 
-      {/* Footer (Always at the Bottom) */}
+      {/* Footer */}
       <FooterCredits />
     </div>
   );
