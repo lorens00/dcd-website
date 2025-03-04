@@ -17,4 +17,5 @@ src: url('./assets/fonts/ostrich-sans/OstrichSans-Medium.otf')
 
 body {
     @apply font-outfit;
+    background-color: #f5fffa;
 }
