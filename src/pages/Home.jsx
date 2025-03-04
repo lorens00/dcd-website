@@ -1,15 +1,32 @@
-import React from "react";
-import { motion } from "framer-motion"; // Import Framer Motion
+import React, { useState, useEffect } from "react";
 import About from "./About";
 import Featured from "./Featured";
-import Testimonials from "./Testimonials";
 import Footer from "./Footer";
 import Header from "../components/Header";
 import Carousel from "../components/Carousel";
+import AppNavbar from "../components/AppNavbar/AppNavbar";
 
 export default function Home() {
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const carouselSection = document.getElementById("carousel-section");
+      if (carouselSection) {
+        const carouselTop = carouselSection.getBoundingClientRect().top;
+        setShowNavbar(carouselTop <= window.innerHeight);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
+      {/* Conditionally show Navbar */}
+      {showNavbar && <AppNavbar />}
+
       <div>
         <Header />
       </div>
@@ -22,7 +39,7 @@ export default function Home() {
 
         {/* Content Section */}
         <div className="container relative z-10 text-white max-w-2xl mx-auto text-center lg:text-left lg:ml-16 xl:ml-20 md:pr-0">
-          <h1 className="font-ostrichbold text-6xl md:text-7xl xl:text-8xl ">
+          <h1 className="font-ostrichbold text-6xl md:text-7xl xl:text-8xl">
             A Better Pizza
           </h1>
           <p className="text-base lg:text-xl sm:text-lg mb-6 text-gray-50 font-light px-4 md:px-0 py-0.5">
@@ -47,18 +64,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
+      {/* Add an ID to the Carousel section */}
+      <div id="carousel-section">
         <Carousel />
       </div>
 
       <div className="my-5">
         <About />
       </div>
-      
-
-      
-
-      <Footer />
     </>
   );
 }
