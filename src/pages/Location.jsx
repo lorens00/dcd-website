@@ -81,14 +81,14 @@ const Location = () => {
 
       <div className="bg-red-800 py-6 overflow-x-hidden pt-28 md:pt-36">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-36 max-w-7xl">
-          <h2 className="font-ostrichmedium tracking-wide font-extrabold text-4xl md:text-5xl lg:text-6xl text-center lg:py-4 text-white pt-12">
+          <h2 className="font-ostrichmedium tracking-wide font-extrabold text-4xl md:text-5xl lg:text-6xl text-center lg:py-4 text-white pt-12 md:pb-4">
             Find a Branch Near You!
           </h2>
           <SearchBar onSearch={handleSearch} toggleFilter={toggleFilter} isFilterOpen={isFilterOpen} />
 
           {/* Animated Filter List */}
           <motion.ul
-            className="px-8 text-base md:text-xl text-white text-center flex flex-wrap justify-center gap-3 lg:gap-7 pb-5 md:pb-7"
+            className="px-8 text-base md:text-xl text-white text-center flex flex-wrap justify-center gap-3 lg:gap-7 pb-2 md:pt-0"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: isFilterOpen ? 1 : 0, height: isFilterOpen ? 'auto' : 0 }}
             transition={{ duration: 0.3 }}
@@ -105,7 +105,7 @@ const Location = () => {
             ))}
           </motion.ul>
 
-          <ul className="space-y-5">
+          <ul className="space-y-4">
             {filteredLocations.map((location) => (
               <li key={location.id} className="bg-slate-50 p-4 mb-4 rounded shadow-md mx-4 sm:mx-6 lg:mx-8">
                 <div className="flex flex-col mb-2 md:mb-4">
