@@ -7,7 +7,7 @@ const media = [
   { type: "image", src: "/assets/banner/featured.jpg" },
 ];
 
-const TRANSITION_OPTIONS = { duration: 0.5, ease: "easeInOut" };
+const TRANSITION_OPTIONS = { duration: 0.2, ease: "easeInOut" };
 
 export default function Carousel({ className = "", autoPlay = true, interval = 8000 }) {
   const [activeIndex, setActiveIndex] = useState(0);

@@ -43,7 +43,7 @@ const Featured = () => {
               className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300"
             >
               <div className="flex items-center gap-2 text-white text-sm md:text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                More flavors <img src="/assets/icons/arrow2.svg" alt="arrow" className="w-3 h-3 md:w-5 md:h-5" />
+                More flavors <img src="/assets/icons/arrow2.svg" alt="arrow" className="w-4 h-4 md:w-5 md:h-5" />
               </div>
             </Link>
           </div>
@@ -72,8 +72,8 @@ const Featured = () => {
                   to="/menu"
                   className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300"
                 >
-                  <div className="flex items-center gap-2 text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    More flavors <img src="/assets/icons/arrow2.svg" alt="arrow" className="w-5 h-5" />
+                  <div className="flex items-center gap-2 text-white md:text-base lg::text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm">
+                    More flavors <img src="/assets/icons/arrow2.svg" alt="arrow" className="w-4 h-4 lg:w-5 lg:h-5" />
                   </div>
                 </Link>
               </div>
