@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import AboutSection from "../components/About/AboutSection";
 import Featured from "./Featured";
 import Testimonials from "./Testimonials";
+import MerchHighlights from "./MerchHighlights";
 
 const About = () => {
   return (
@@ -75,6 +76,9 @@ const About = () => {
               Show off your love for great pizza with our exclusive merchandise. From stylish shirts to cool accessories, our merch is designed to add a touch of flavor to your wardrobe. Grab yours today and wear your passion!
             </p>
           </div>
+        </div>
+        <div>
+          <MerchHighlights />
         </div>
       </AboutSection>
     </div>
