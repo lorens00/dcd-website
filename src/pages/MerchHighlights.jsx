@@ -1,24 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, useMotionValue, useTransform } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const Featured = () => {
-  // State for the current slide index
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  // Array of images for the slideshow
   const slides = [
     "/assets/merch/mug.jpg",
     "/assets/merch/pen.jpg",
     "/assets/merch/umbrella.jpg",
+    "/assets/merch/tshirt.jpg",
+    "/assets/merch/tote-bag.jpg"
   ];
 
   const ONE_SECOND = 1000;
   const AUTO_DELAY = ONE_SECOND * 3; // Change slide every 3 seconds
-  const DRAG_BUFFER = 50;
-
-  const dragX = useMotionValue(0);
-  const x = useTransform(dragX, (value) => value); // Mapping drag value to transform
 
   // Auto slide after every 3 seconds
   useEffect(() => {
@@ -28,24 +24,6 @@ const Featured = () => {
 
     return () => clearInterval(intervalRef);
   }, []);
-
-  // Handling drag end to change slide based on swipe
-  const onDragEnd = () => {
-    const xPosition = dragX.get();
-
-    if (xPosition <= -DRAG_BUFFER && currentSlide < slides.length - 1) {
-      setCurrentSlide((prevSlide) => prevSlide + 1);
-    } else if (xPosition >= DRAG_BUFFER && currentSlide > 0) {
-      setCurrentSlide((prevSlide) => prevSlide - 1);
-    }
-  };
-
-  // Slide transition animation
-  const slideTransition = {
-    type: 'spring',
-    stiffness: 300,
-    damping: 30,
-  };
 
   return (
     <div className="bg-gray-100 py-10 pb-10">
@@ -70,30 +48,40 @@ const Featured = () => {
 
         {/* Cards Section */}
         <div className="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-8 gap-2 md:gap-3">
-          {/* Big Card (Carousel) */}
+          {/* Big Card (Swiper Carousel) */}
           <div className="xl:col-span-3 sm:col-span-3 col-span-3 xl:col-start-2 relative rounded-lg overflow-hidden group">
-            <motion.div
+            <Swiper
+              spaceBetween={10} // Space between slides
+              slidesPerView={1} // Only one image visible at a time
+              loop={true} // Loop back to the first slide after the last one
+              autoplay={{ delay: AUTO_DELAY }} // Auto slide every 3 seconds
+              onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex)} // Update slide index on change
               className="w-full aspect-[4/3]"
-              style={{ x }}
-              drag="x"
-              dragConstraints={{ left: 0, right: 0 }} // Prevent out-of-bounds drag
-              onDragEnd={onDragEnd}
-              transition={slideTransition}
             >
-              <img
-                src={slides[currentSlide]}
-                alt="Big Featured"
-                className="w-full h-full object-cover transition-all duration-500 ease-in-out"
-              />
-            </motion.div>
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <img
+                    src={slide}
+                    alt={`Featured ${index}`}
+                    className="w-full h-full object-cover"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            {/* Title and Description (Positioned at the Bottom) */}
+            <div className="absolute bottom-4 left-4 z-10 text-white pb-2 lg:pb-4">
+              <h2 className="font-bold text-lg md:text-2xl">DCD Merch Custom</h2>
+              <p className="text-xs md:text-sm">Exclusive custom merch designed just for you. Style that stands out!</p>
+            </div>
 
             {/* Carousel Indicators */}
-            <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+            <div className="absolute bottom-3 left-0 right-0 flex justify-center space-x-2">
               {slides.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`h-2 w-2 rounded-full ${index === currentSlide ? 'bg-red-500' : 'bg-gray-500'}`}
+                  className={`h-1 lg:h-1.5 w-3 lg:w-4 rounded-full ${index === currentSlide ? 'bg-red-500' : 'bg-gray-500'} transition-colors duration-300 ease-in-out hover:bg-red-700 z-10`}
                 />
               ))}
             </div>
@@ -115,8 +103,8 @@ const Featured = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute inset-0 bg-black bg-opacity-25 flex flex-col justify-end p-4 text-white transition-opacity duration-300 group-hover:bg-opacity-50">
-                  <h3 className="text-lg font-bold">{item.name}</h3>
+                <div className="absolute inset-0 bg-black bg-opacity-25 flex flex-col justify-end px-2 py-1.5 md:px-3 md:py-2 text-white transition-opacity duration-300 group-hover:bg-opacity-50">
+                  <h3 className="text-base lg:text-lg font-bold">{item.name}</h3>
                   <p className="text-sm">{item.price}</p>
                 </div>
               </div>

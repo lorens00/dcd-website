@@ -65,7 +65,7 @@ export default function Home() {
       </div>
 
       {/* Add an ID to the Carousel section */}
-      <div id="carousel-section">
+      <div id="carousel-section" className="pt-6 pb-8">
         <Carousel />
       </div>
 
