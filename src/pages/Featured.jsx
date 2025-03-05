@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Featured = () => {
   return (
-    <div className="bg-gray-100 py-10 pb-10">
+    <div className="bg-gray-100 py-7 md:py-10 pb-10">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="flex justify-between items-center pb-4">
@@ -42,8 +42,8 @@ const Featured = () => {
               to="/menu"
               className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300"
             >
-              <div className="flex items-center gap-2 text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                More flavors <img src="/assets/icons/arrow2.svg" alt="arrow" className="w-5 h-5" />
+              <div className="flex items-center gap-2 text-white text-sm md:text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                More flavors <img src="/assets/icons/arrow2.svg" alt="arrow" className="w-3 h-3 md:w-5 md:h-5" />
               </div>
             </Link>
           </div>

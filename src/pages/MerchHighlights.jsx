@@ -26,7 +26,7 @@ const Featured = () => {
   }, []);
 
   return (
-    <div className="bg-gray-100 py-10 pb-10">
+    <div className="bg-gray-100 py-6 pb-6">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="flex justify-between items-center pb-4">
@@ -71,7 +71,7 @@ const Featured = () => {
 
             {/* Title and Description (Positioned at the Bottom) */}
             <div className="absolute bottom-4 left-4 z-10 text-white pb-2 lg:pb-4">
-              <h2 className="font-bold text-lg md:text-2xl">DCD Merch Custom</h2>
+              <h2 className="font-bold text-lg md:text-2xl ">DCD Merch!</h2>
               <p className="text-xs md:text-sm">Exclusive custom merch designed just for you. Style that stands out!</p>
             </div>
 
