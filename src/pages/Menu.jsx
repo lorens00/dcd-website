@@ -37,12 +37,12 @@ const Menu = () => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <div className="mb-24 md:pb-10">
+      <div className="mb-24 md:pb-10 bg-yellow-300">
         <Header2 />
       </div>
 
       {/* Sticky Section (Title + Categories) */}
-      <div className="sticky top-0 z-20 bg-white shadow-md">
+      <div className="sticky top-0 z-20 bg-white shadow-md max-w-full">
         <div className="p-4">
           <div className="flex flex-col items-center pt-5">
             <h2 className="font-ostrichmedium font-bold text-4xl md:text-5xl lg:text-6xl pb-3 md:pb-6 text-center text-red-700">
@@ -131,3 +131,4 @@ const Menu = () => {
 };
 
 export default Menu;
+

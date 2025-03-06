@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { FaTshirt } from "react-icons/fa"; // Import the T-shirt icon
 import { useLocation } from "react-router-dom";
 
 export default function AppNavbar() {
@@ -58,7 +59,7 @@ export default function AppNavbar() {
 
       {/* Hamburger Menu */}
       {isMenuOpen && (
-        <div className="inset-x-0 fixed bottom-28 md:bottom-32 flex items-center justify-center w-[70%] h-40 md:h-48 max-w-lg mx-auto bg-black bg-opacity-90 text-white rounded-xl shadow-xl p-4 z-50">
+        <div className="inset-x-0 fixed bottom-28 md:bottom-32 flex items-center justify-center w-[70%] h-50 md:h-58 max-w-lg mx-auto bg-black bg-opacity-90 text-white rounded-xl shadow-xl p-4 z-50">
           <div className="flex flex-col gap-2 w-11/12">
             <a
               href="/"
@@ -80,6 +81,14 @@ export default function AppNavbar() {
             >
               <img src="/assets/icons/phoneLogo.svg" className="w-5" alt="Contact Us" />
               <span className="text-sm md:text-lg">Contact</span>
+            </a>
+            {/* Merch Button in the Hamburger Menu */}
+            <a
+              href="/merch"
+              className="p-2 hover:bg-red-700 hover:scale-105 transform transition-all duration-300 rounded-xl border border-white flex items-center gap-2 justify-center w-full"
+            >
+              <FaTshirt className="w-6" />
+              <span className="text-sm md:text-lg">Merch</span>
             </a>
           </div>
         </div>

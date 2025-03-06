@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,15 +18,17 @@ const Header = () => {
     };
   }, []);
 
+  const handleClick = () => {
+    navigate("/");
+  };
+
   return (
     <div
-      className={`top-0 left-0 right-0 z-10 p-5 transition-all duration-200 ${
-        isVisible ? "fixed opacity-100" : "fixed opacity-0 pointer-events-none"
-      } bg-transparent`}
+      className={`absolute top-0 left-0 right-0 p-4 md:p-5 ${isVisible ? "" : "hidden"} bg-transparent`}
     >
-      <a href="/" className={`${isVisible ? "pointer-events-auto" : "pointer-events-none"}`}>
+      <a href="#" onClick={handleClick} className="flex justify-center w-auto mx-auto">
         <img
-          className="w-36 md:w-44 mx-auto"
+          className="w-40 md:w-48"
           src="/assets/icons/logo.png"
           alt="Logo"
         />
