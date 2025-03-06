@@ -24,7 +24,7 @@ const Header = () => {
     >
       <a href="/" className={`${isVisible ? "pointer-events-auto" : "pointer-events-none"}`}>
         <img
-          className="w-36 md:w-48 lg:w-56 mx-auto"
+          className="w-40 md:w-52 lg:w-60 mx-auto"
           src="/assets/icons/logo-white.png"
           alt="Logo"
         />

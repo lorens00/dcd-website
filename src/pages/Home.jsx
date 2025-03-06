@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Header from "../components/Header";
 import Carousel from "../components/Carousel";
 import AppNavbar from "../components/AppNavbar/AppNavbar";
+import { FaTshirt } from "react-icons/fa"; // Import the clothes icon
 
 export default function Home() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -50,16 +51,32 @@ export default function Home() {
 
           {/* Buttons Section */}
           <div className="flex justify-center lg:justify-start space-x-4">
-            <a href="/store">
-              <button className="bg-yellow-400 text-black px-5 lg:px-7 py-2.5 lg:py-3.5 rounded-lg hover:bg-yellow-500 transition duration-300 text-sm sm:text-base lg:font-semibold">
-                Order Now
-              </button>
-            </a>
-            <a href="/contact">
-              <button className="outline outline-1 outline-yellow-400 text-yellow-400 px-5 lg:px-7 py-2.5 lg:py-3.5 lg:font-semibold rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300 text-sm sm:text-base">
-                Contact Us
-              </button>
-            </a>
+            {/* Replace the buttons with the AppNavbar layout */}
+            <div className="flex items-center gap-1">
+              {/* Merch Button (Replaces hamburger menu) */}
+              <a
+                href="/merch"
+                className="p-4 py-5 md:p-6 xl:py-6.5 bg-black bg-opacity-70 text-white rounded-2xl shadow-xl hover:bg-opacity-80 transition duration-300"
+              >
+                <FaTshirt className="w-6" />
+              </a>
+
+              {/* Explore Products Button */}
+              <a
+                href="/menu"
+                className="px-10 md:px-24 py-5 sm:py-4 md:py-5 xl:py-4.5  bg-black bg-opacity-70 text-white text-xs sm:text-sm md:text-base xl:text-lg font-semibold rounded-2xl shadow-xl hover:bg-red-700 transition duration-300"
+              >
+                Explore Products
+              </a>
+
+              {/* Store Button */}
+              <a
+                href="/store"
+                className="p-4 md:p-5 bg-black bg-opacity-70 xl:py-6.5 text-white rounded-2xl shadow-xl hover:bg-opacity-80 transition duration-300"
+              >
+                <img src="/assets/icons/storeLogo2.svg" className="w-6" alt="Store" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
