@@ -42,10 +42,10 @@ const Menu = () => {
       </div>
 
       {/* Sticky Section (Title + Categories) */}
-      <div className="sticky top-0 bg-white shadow-md z-20 transition-all duration-300 ease-in-out">
+      <div className="sticky top-0 z-20 bg-white shadow-md">
         <div className="p-4">
           <div className="flex flex-col items-center pt-5">
-            <h2 className="font-ostrichmedium font-bold text-4xl md:text-5xl lg:text-6xl pb-6 md:pb-8 text-center text-red-700">
+            <h2 className="font-ostrichmedium font-bold text-4xl md:text-5xl lg:text-6xl pb-3 md:pb-6 text-center text-red-700">
               Made for You
             </h2>
             <div className="container mx-auto px-4 sm:px-6 lg:px-20">

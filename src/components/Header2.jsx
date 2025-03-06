@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
+      // Hide the header when scrolling down
       setIsVisible(window.scrollY === 0);
     };
 
@@ -17,10 +17,10 @@ const Header = () => {
   }, []);
 
   return (
-    <motion.div
-      className={`fixed top-0 left-0 right-0 z-50 p-5 ${
-        isVisible ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-      } transition-opacity duration-200 bg-transparent`}
+    <div
+      className={`top-0 left-0 right-0 z-10 p-5 transition-all duration-200 ${
+        isVisible ? "fixed opacity-100" : "fixed opacity-0 pointer-events-none"
+      } bg-transparent`}
     >
       <a href="/" className={`${isVisible ? "pointer-events-auto" : "pointer-events-none"}`}>
         <img
@@ -29,7 +29,7 @@ const Header = () => {
           alt="Logo"
         />
       </a>
-    </motion.div>
+    </div>
   );
 };
 
