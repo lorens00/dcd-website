@@ -14,9 +14,8 @@ const Featured = () => {
   ];
 
   const ONE_SECOND = 1000;
-  const AUTO_DELAY = ONE_SECOND * 3; // Change slide every 3 seconds
+  const AUTO_DELAY = ONE_SECOND * 3;
 
-  // Auto slide after every 3 seconds
   useEffect(() => {
     const intervalRef = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
@@ -51,11 +50,11 @@ const Featured = () => {
           {/* Big Card (Swiper Carousel) */}
           <div className="xl:col-span-3 sm:col-span-3 col-span-3 xl:col-start-2 relative rounded-lg overflow-hidden group">
             <Swiper
-              spaceBetween={10} // Space between slides
-              slidesPerView={1} // Only one image visible at a time
-              loop={true} // Loop back to the first slide after the last one
-              autoplay={{ delay: AUTO_DELAY }} // Auto slide every 3 seconds
-              onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex)} // Update slide index on change
+              spaceBetween={10} 
+              slidesPerView={1} 
+              loop={true} 
+              autoplay={{ delay: AUTO_DELAY }} 
+              onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex)} 
               className="w-full aspect-[4/3]"
             >
               {slides.map((slide, index) => (
@@ -69,10 +68,12 @@ const Featured = () => {
               ))}
             </Swiper>
 
-            {/* Title and Description (Positioned at the Bottom) */}
-            <div className="absolute bottom-4 left-4 z-10 text-white pb-2 lg:pb-4">
-              <h2 className="font-bold text-lg md:text-2xl ">DCD Merch!</h2>
-              <p className="text-xs md:text-sm">Exclusive custom merch designed just for you. Style that stands out!</p>
+            {/* Overlay covering bottom part */}
+            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-35 px-3 py-2 text-white z-10 pb-4 lg:pb-7">
+              <h2 className="font-bold text-lg md:text-2xl">DCD Merch!</h2>
+              <p className="text-xs md:text-sm">
+                Exclusive custom merch designed just for you. Style that stands out!
+              </p>
             </div>
 
             {/* Carousel Indicators */}
@@ -81,15 +82,15 @@ const Featured = () => {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`h-1 lg:h-1.5 w-3 lg:w-4 rounded-full ${index === currentSlide ? 'bg-red-500' : 'bg-gray-500'} transition-colors duration-300 ease-in-out hover:bg-red-700 z-10`}
+                  className={`h-1 lg:h-1.5 w-3 lg:w-4 rounded-full ${index === currentSlide ? 'bg-red-500' : 'bg-white'} transition-colors duration-300 ease-in-out hover:bg-red-700 z-10`}
                 />
               ))}
             </div>
           </div>
 
-          {/* Small Cards (Grid Layout) */}
+          {/* Small Cards */}
           <div className="grid grid-cols-2 xl:grid-cols-2 gap-2 md:gap-3 col-span-3">
-            {[ 
+            {[
               { name: "DCD Tshirt", price: "₱359.00", src: "/assets/merch/tshirt.jpg" },
               { name: "DCD Hat", price: "₱389.00", src: "/assets/merch/hat.jpg" },
               { name: "DCD Tumbler", price: "₱359.00", src: "/assets/merch/tumbler.jpg" },
@@ -103,13 +104,14 @@ const Featured = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute inset-0 bg-black bg-opacity-25 flex flex-col justify-end px-2 py-1.5 md:px-3 md:py-2 text-white transition-opacity duration-300 group-hover:bg-opacity-50">
+                {/* Overlay covering bottom part */}
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-35 px-3 py-1 text-white">
                   <h3 className="text-base lg:text-lg font-bold">{item.name}</h3>
-                  <p className="text-sm">{item.price}</p>
                 </div>
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </div>

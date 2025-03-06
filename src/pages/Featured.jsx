@@ -34,8 +34,8 @@ const Featured = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute inset-0 bg-black bg-opacity-25 flex flex-col justify-end p-4 lg:p-6 text-white transition-opacity duration-300 group-hover:bg-opacity-50">
-              <h2 className="text-lg md:text-2x font-bold">Special Pizza</h2>
+            <div className="absolute bottom-0 left-0 right-0 h-[40%] bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-4 lg:p-6 text-white transition-opacity duration-300 group-hover:from-black/80">
+              <h2 className="text-lg md:text-2xl font-bold">Special Pizza</h2>
               <p className="text-xs md:text-sm">Delicious cheesy pizza with fresh toppings.</p>
             </div>
             <Link
@@ -64,7 +64,7 @@ const Featured = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute inset-0 bg-black bg-opacity-25 flex flex-col justify-end p-2 lg:p-4 text-white transition-opacity duration-300 group-hover:bg-opacity-50">
+                <div className="absolute bottom-0 left-0 right-0 h-[40%] bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-2 lg:p-4 text-white transition-opacity duration-300 group-hover:from-black/80">
                   <h3 className="text-base md:text-lg font-bold">{item.name}</h3>
                   <p className="text-sm md:text-sm">{item.price}</p>
                 </div>
